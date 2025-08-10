@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Five Stars</span> Car Rental</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="signInBtn">Sign In</a></li>
+                    <li><a href="#" id="signUpBtn">Sign Up</a></li>
+                    <li><a href="#" id="signOutBtn" style="display:none;">Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <section id="showcase">
+    <div class="container">
+        <h1>Premium Luxury Car Rentals at Exceptional Value</h1>
+        <p>Experience the thrill of driving world-class vehicles with unbeatable rates and impeccable service.</p>
+    </div>
+</section>
+
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter Email..." required>
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            
+            <div class="box">
+    <img src="images/ferrari_sf90.jpg" alt="Ferrari SF90 Stradale">
+    <h3>Ferrari SF90 Stradale</h3>
+   
+</div>
+
+<div class="box">
+    <img src="images/lamborghini_aventador.jpg" alt="Lamborghini Aventador SVJ">
+    <h3>Lamborghini Aventador SVJ</h3>
+    
+</div>
+
+<div class="box">
+    <img src="images/rolls_royce_phantom.jpg" alt="Rolls-Royce Phantom">
+    <h3>Rolls-Royce Phantom</h3>
+   
+</div>
+
+<div class="box">
+    <img src="images/bugatti_chiron.jpg" alt="Bugatti Chiron">
+    <h3>Bugatti Chiron</h3>
+    
+</div>
+
+<div class="box">
+    <img src="images/aston_martin_db11.jpg" alt="Aston Martin DB11">
+    <h3>Aston Martin DB11</h3>
+
+</div>
+
+<div class="box">
+    <img src="images/porsche_911_turbo.jpg" alt="Porsche 911 Turbo S">
+    <h3>Porsche 911 Turbo S</h3>
+
+</div>
+<div class="box">
+                <img src="images/clio5.jpg" alt="Renault Clio 5">
+                <h3>Renault Clio 5</h3>
+
+            </div>
+            <div class="box">
+                <img src="images/peugeot208.jpg" alt="Peugeot 208">
+                <h3>Peugeot 208</h3>
+                
+            </div>
+            <div class="box">
+                <img src="images/audi-a4.jpg" alt="Audi A4">
+                <h3>Audi A4</h3>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Five Stars Car Rental, Copyright &copy; 2023</p>
+    </footer>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="signInEmail">Email:</label>
+                    <input type="email" id="signInEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword">Password:</label>
+                    <input type="password" id="signInPassword" required>
+                </div>
+                <button type="submit" class="button_1">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <div class="form-group">
+                    <label for="signUpName">Full Name:</label>
+                    <input type="text" id="signUpName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpEmail">Email:</label>
+                    <input type="email" id="signUpEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword">Password:</label>
+                    <input type="password" id="signUpPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpConfirmPassword">Confirm Password:</label>
+                    <input type="password" id="signUpConfirmPassword" required>
+                </div>
+                <button type="submit" class="button_1">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

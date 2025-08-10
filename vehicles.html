@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Vehicles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Five Stars</span> Car Rental</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="signInBtn">Sign In</a></li>
+                    <li><a href="#" id="signUpBtn">Sign Up</a></li>
+                    <li><a href="#" id="signOutBtn" style="display:none;">Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Our Vehicles</h1>
+                <ul id="vehicles">
+                    <li>
+    <img src="images/ferrari_sf90.jpg" alt="Ferrari SF90 Stradale">
+    <h3>Ferrari SF90 Stradale</h3>
+    <p>A hybrid supercar blending breathtaking speed with Italian elegance.</p>
+    <p class="price">€1,200/day</p>
+    <button class="reserve-btn" data-car="Ferrari SF90 Stradale">Reserve</button>
+</li>
+
+<li>
+    <img src="images/lamborghini_aventador.jpg" alt="Lamborghini Aventador SVJ">
+    <h3>Lamborghini Aventador SVJ</h3>
+    <p>Raw power and aggressive design for an unforgettable drive.</p>
+    <p class="price">€1,100/day</p>
+    <button class="reserve-btn" data-car="Lamborghini Aventador SVJ">Reserve</button>
+</li>
+
+<li>
+    <img src="images/rolls_royce_phantom.jpg" alt="Rolls-Royce Phantom">
+    <h3>Rolls-Royce Phantom</h3>
+    <p>The ultimate symbol of luxury and handcrafted perfection.</p>
+    <p class="price">€950/day</p>
+    <button class="reserve-btn" data-car="Rolls-Royce Phantom">Reserve</button>
+</li>
+
+<li>
+    <img src="images/bugatti_chiron.jpg" alt="Bugatti Chiron">
+    <h3>Bugatti Chiron</h3>
+    <p>Engineering mastery delivering unmatched speed and prestige.</p>
+    <p class="price">€2,500/day</p>
+    <button class="reserve-btn" data-car="Bugatti Chiron">Reserve</button>
+</li>
+
+<li>
+    <img src="images/aston_martin_db11.jpg" alt="Aston Martin DB11">
+    <h3>Aston Martin DB11</h3>
+    <p>A grand tourer that combines performance with refined British style.</p>
+    <p class="price">€750/day</p>
+    <button class="reserve-btn" data-car="Aston Martin DB11">Reserve</button>
+</li>
+
+<li>
+    <img src="images/porsche_911_turbo.jpg" alt="Porsche 911 Turbo S">
+    <h3>Porsche 911 Turbo S</h3>
+    <p>An icon of performance, precision, and everyday drivability.</p>
+    <p class="price">€680/day</p>
+    <button class="reserve-btn" data-car="Porsche 911 Turbo S">Reserve</button>
+</li>
+
+<li>
+    <img src="images/mercedes_amg_gt.jpg" alt="Mercedes-AMG GT R">
+    <h3>Mercedes-AMG GT R</h3>
+    <p>German engineering excellence with a perfect balance of speed and luxury.</p>
+    <p class="price">€720/day</p>
+    <button class="reserve-btn" data-car="Mercedes-AMG GT R">Reserve</button>
+ </li>
+
+                    <li>
+                        <img src="images/clio5.jpg" alt="Renault Clio 5">
+                        <h3>Renault Clio 5</h3>
+                        <p>Compact and efficient, perfect for city driving.</p>
+                        <p class="price">€45/day</p>
+                        <button class="reserve-btn" data-car="Renault Clio 5">Reserve</button>
+                    </li>
+                    <li>
+                        <img src="images/peugeot208.jpg" alt="Peugeot 208">
+                        <h3>Peugeot 208</h3>
+                        <p>Stylish design with great fuel economy.</p>
+                        <p class="price">€50/day</p>
+                        <button class="reserve-btn" data-car="Peugeot 208">Reserve</button>
+                    </li>
+                    <li>
+                        <img src="images/audi-a4.jpg" alt="Audi A4">
+                        <h3>Audi A4</h3>
+                        <p>Luxury sedan with premium features.</p>
+                        <p class="price">€90/day</p>
+                        <button class="reserve-btn" data-car="Audi A4">Reserve</button>
+                    </li>
+                    <li>
+                        <img src="images/mercedes.jpg" alt="Mercedes">
+                        <h3>Mercedes-Benz C-Class</h3>
+                        <p>Ultimate comfort and performance.</p>
+                        <p class="price">€110/day</p>
+                        <button class="reserve-btn" data-car="Mercedes-Benz C-Class">Reserve</button>
+                    </li>
+                </ul>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Why Choose Us?</h3>
+                    <p>We offer the best prices for premium vehicles with no hidden fees. Our cars are regularly maintained and always clean. 24/7 customer support available.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div id="reserveModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reserve <span id="reserveCarName"></span></h2>
+            <form id="reserveForm">
+                <div class="form-group">
+                    <label for="reserveName">Full Name:</label>
+                    <input type="text" id="reserveName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserveEmail">Email:</label>
+                    <input type="email" id="reserveEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="reservePhone">Phone:</label>
+                    <input type="tel" id="reservePhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserveDate">Pickup Date:</label>
+                    <input type="date" id="reserveDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserveDays">Number of Days:</label>
+                    <input type="number" id="reserveDays" min="1" required>
+                </div>
+                <button type="submit" class="button_1">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Five Stars Car Rental, Copyright &copy; 2023</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

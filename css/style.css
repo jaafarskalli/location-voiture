@@ -1,0 +1,365 @@
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+   /* style.css */
+
+    background-image: url('images/luxury-car-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: hsl(228, 89%, 11%);
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background: #c6d21d;
+}
+
+.dark {
+    padding: 15px;
+    background: #5f567b;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    background: #5f567b;
+    color:hsla(0, 0%, 100%, 0.868);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: hsl(284, 89%, 11%) 3px solid;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: hsl(262, 37%, 21%);
+    font-weight: bold;
+    letter-spacing: 2px; /* space between letters for sophistication */
+    text-transform: uppercase; /* luxury brands often use uppercase */
+       text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* subtle shadow for readability */
+}
+
+
+
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    position: relative;
+background-image: url('../images/luxury-car-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    text-align: center;
+    color: #f5f5f5cf; /* soft white for elegance */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* clean and modern */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+     
+    background-image: url('../images/luxury-car-bg.jpg');
+
+}
+
+#showcase h1 {
+   font-size: 3.5rem; /* larger, impactful */
+    font-weight: 700;  /* bold */
+    letter-spacing: 2px; /* space between letters for sophistication */
+    text-transform: uppercase; /* luxury brands often use uppercase */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgb(49, 47, 50); /* subtle shadow for readability */
+}
+
+
+#showcase p {
+   font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    letter-spacing: 0.5px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #5f567b;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Container qui aligne les boxes */
+#boxes .container {
+    display: flex;
+    flex-wrap: wrap;             /* Permet de passer à la ligne si trop étroit */
+    justify-content: space-between;  /* Espace entre les boxes */
+    gap: 20px;                   /* Espace entre les boxes */
+    margin-top: 20px;
+}
+
+/* Chaque box prend environ 30% de la largeur avec un max */
+#boxes .box {
+    flex: 1 1 30%;               /* flex-grow, flex-shrink, flex-basis */
+    max-width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;      /* Pour que le padding soit inclus dans la largeur */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Effet au survol */
+#boxes .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Image plus grande et responsive */
+#boxes .box img {
+    width: 100%;        /* image prend toute la largeur de la box */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+/* Titre stylé */
+#boxes .box h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+
+/* Pour petits écrans, on met les boxes en colonne */
+@media screen and (max-width: 768px) {
+    #boxes .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#vehicles li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    text-align: center;
+}
+
+ul#vehicles li img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color:hsl(228, 89%, 11%);
+    font-size: 18px;
+}
+
+.reserve-btn {
+    background: #5f567b;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.reserve-btn:hover {
+    background: hsl(228, 89%, 11%);
+}
+
+/* Contact Form */
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color:  #5f567b;
+    text-align: center;
+    clear: both;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 253, 253, 0.97);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button,
+    .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
